@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<div ng-controller="HomeController as homeCtr">
+    <form name="register" ng-submit="homeCtr.register(register)">
+        <div><label>User Name</label><input ng-model = "homeCtr.userName" required /></div>
+        <div><label>Pass Word</label><input ng-model = "homeCtr.passWord" required/></div>
+        <div><label>Confirm Password</label><input ng-model="homeCtr.confirmPassword" required /></div>
+        <button type="submit">Register</button>
+    </form>
+</div>
